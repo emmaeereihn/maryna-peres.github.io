@@ -11,7 +11,8 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #000000; /* Pure black background from reference */
+            background-color: #000000;
+            background-image: radial-gradient(ellipse at top, #111827 0%, #000000 70%);
             color: #E5E7EB; /* Light gray text */
         }
         .text-gradient {
@@ -46,6 +47,10 @@
             /* background-image: url('hero-bg.jpg'); */ /* This line has been removed */
             background-size: cover;
             background-position: center;
+        }
+        .glowing-card {
+            box-shadow: 0 0 25px rgba(184, 231, 246, 0.15);
+            border-color: rgba(184, 231, 246, 0.25);
         }
     </style>
 </head>
@@ -110,21 +115,21 @@
                     <p class="max-w-2xl mx-auto text-gray-400 mt-4">I provide clear solutions to the most common data pain points.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
+                    <div class="glowing-card bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
                         <div class="mb-4">
                            <svg class="w-12 h-12 text-[#B8E7F6]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.543L16.5 21.75l-.398-1.207a3.375 3.375 0 00-2.455-2.456L12.75 18l1.207-.398a3.375 3.375 0 002.455-2.456L16.5 14.25l.398 1.207a3.375 3.375 0 002.456 2.456L20.25 18l-1.207.398a3.375 3.375 0 00-2.456 2.456z" /></svg>
                         </div>
                         <h3 class="text-2xl font-bold mb-3">Disconnected Data & Unclear ROI</h3>
                         <p class="text-gray-400"><span class="font-bold text-white">Solution:</span> I'll unify your marketing data, from web and app attribution to ad spend, creating a single source of truth that clearly connects your efforts to revenue.</p>
                     </div>
-                    <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
+                    <div class="glowing-card bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
                         <div class="mb-4">
                             <svg class="w-12 h-12 text-[#B8E7F6]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                         </div>
                         <h3 class="text-2xl font-bold mb-3">High Churn & Low Customer Value</h3>
                         <p class="text-gray-400"><span class="font-bold text-white">Solution:</span> I'll build deep customer segmentations and cohort analyses to reveal who your best customers are, why they stay, and where the biggest opportunities for improving retention and LTV are hiding.</p>
                     </div>
-                    <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
+                    <div class="glowing-card bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800 transform hover:-translate-y-2 transition-transform">
                         <div class="mb-4">
                             <svg class="w-12 h-12 text-[#B8E7F6]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
@@ -168,11 +173,11 @@
                     <h2 class="text-3xl md:text-4xl font-bold">What People Are Saying</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800">
+                    <div class="glowing-card bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800">
                         <p class="text-gray-400 italic mb-4">"Maryna is a true Jedi of product management and data analytics. She has a remarkable ability to translate complex business requirements into actionable tasks, ensuring the team stays focused and aligned with project goals."</p>
                         <p class="font-bold text-right">- Nana Mardoyan, Marketing & PR Director</p>
                     </div>
-                    <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800">
+                    <div class="glowing-card bg-gray-900 bg-opacity-60 p-8 rounded-lg border border-gray-800">
                         <p class="text-gray-400 italic mb-4">"Her ability to bridge the gap between business objectives and technical implementation is remarkable. What sets Maryna apart is her exceptional communication and collaboration skills"</p>
                         <p class="font-bold text-right">- Maryna Gusakova, IT Project Manager</p>
                     </div>
@@ -186,7 +191,7 @@
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold">Professional Certifications</h2>
                 </div>
-                <div class="max-w-3xl mx-auto bg-gray-900 bg-opacity-60 border border-gray-800 rounded-lg p-8">
+                <div class="glowing-card max-w-3xl mx-auto bg-gray-900 bg-opacity-60 border border-gray-800 rounded-lg p-8">
                     <ul class="space-y-4">
                         <li class="flex justify-between items-center"><span class="text-lg">Professional Scrum Product Owner (PSPO)</span> <a href="https://www.credly.com/badges/1c6b12a3-623b-4c5b-9f6c-0e7019e09d1e" target="_blank" class="text-[#B8E7F6] hover:underline">View Credential</a></li>
                         <li class="flex justify-between items-center"><span class="text-lg">ICAgile - Agile Product Ownership</span> <a href="https://www.credly.com/badges/d28c6e21-085e-4050-96f3-3323081e74f1" target="_blank" class="text-[#B8E7F6] hover:underline">View Credential</a></li>
@@ -219,3 +224,4 @@
 
 </body>
 </html>
+
