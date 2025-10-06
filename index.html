@@ -44,15 +44,55 @@
             z-index: 0;
         }
         .hero-bg {
-            /* background-image: url('hero-bg.jpg'); */ /* This line has been removed */
             background-size: cover;
             background-position: center;
-            background-image: radial-gradient(ellipse at center, rgba(184, 231, 246, 0.25) 0%, transparent 70%);
         }
         .glowing-card {
             box-shadow: 0 0 25px rgba(184, 231, 246, 0.15);
             border-color: rgba(184, 231, 246, 0.25);
         }
+
+        /* --- New Graphic Design Elements --- */
+        @keyframes float {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-20px) translateX(10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+        }
+
+        @keyframes float-reverse {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(20px) translateX(-10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+        }
+
+        .hero-bg::before, .hero-bg::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px); /* Strong blur for a soft glow */
+            will-change: transform;
+        }
+
+        .hero-bg::before {
+            width: 400px;
+            height: 400px;
+            background-color: #F58B16;
+            left: 10%;
+            top: 15%;
+            opacity: 0.15;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-bg::after {
+            width: 500px;
+            height: 500px;
+            background-color: #B8E7F6;
+            right: 5%;
+            bottom: 10%;
+            opacity: 0.1;
+            animation: float-reverse 10s ease-in-out infinite;
+        }
+        /* --- End of New Graphic Design Elements --- */
     </style>
 </head>
 <body class="antialiased">
